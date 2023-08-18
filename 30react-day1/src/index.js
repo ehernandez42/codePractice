@@ -6,7 +6,7 @@ const rootElement  = document.getElementById('root')
 const title = <h2>Getting Started React</h2>
 
 ReactDOM.render(jsxElement, rootElement)
-ReactDOM.render(title, rootElement //stopped here at renedering the browser wioth an h2 element
+ReactDOM.render(title, rootElement) //stopped here at renedering the browser wioth an h2 element
 
 
 
