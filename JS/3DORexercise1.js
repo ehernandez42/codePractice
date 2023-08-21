@@ -62,9 +62,22 @@ const itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle"
 console.log(itCompanies)
 //results: (7) ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
 
-
 //8. Print the number of companies in the array
+
+console.log(itCompanies.length)
+//results: 7
+
 // 9. Print the first company, middle and last company
+
+const firstCompany = itCompanies[0]
+
+const lastCompany = itCompanies[itCompanies.length - 1]
+
+console.log("first company: " + firstCompany)
+console.log("last company: " + lastCompany)
+//results: first company: Facebook
+//last company: Amazon
+
 // 10. Print out each company
 // 11. Change each company name to uppercase one by one and print them out
 // 12. Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
