@@ -79,7 +79,41 @@ console.log("last company: " + lastCompany)
 //last company: Amazon
 
 // 10. Print out each company
+for (let i = 0; i < itCompanies.length; i++) {
+    console.log(itCompanies[i])
+}
+
+/*
+Results:
+Facebook
+Google
+Microsoft
+Apple
+IBM
+Oracle
+Amazon
+*/
+console.log("--")
+console.log("--")
 // 11. Change each company name to uppercase one by one and print them out
+
+
+for(let i = 0; i < itCompanies.length; i++) {
+  let upperCaseComp = itCompanies[i].toString()
+  console.log(upperCaseComp.toUpperCase());
+}
+
+/*
+Results:
+FACEBOOK
+GOOGLE
+MICROSOFT
+APPLE
+IBM
+ORACLE
+AMAZON
+*/
+
 // 12. Print the array like as a sentence: Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies.
 // 13. Check if a certain company exists in the itCompanies array. If it exist return the company else return a company is not found
 // 14. Filter out companies which have more than one 'o' without the filter method
