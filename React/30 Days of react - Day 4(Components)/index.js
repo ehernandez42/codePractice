@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import asabeneh from './Images/asabeneh.jpg'
 
-
+//header title that says "Hexacolor Generator"
 const Header = () => {
     const title = 'Hexacolor Generator'
     const headerWrapper = {
@@ -15,11 +15,9 @@ const Header = () => {
                 <h1 style={headerWrapper}>{title}</h1>
             </div>
         </header>
-
     )
 }
-
-
+//hexacolor generator that creates the random colors for the background color
 const hexaColor = () => {
     let str = '0123456789abcdef'
     let color = ''
@@ -46,30 +44,39 @@ const HexaColor = () => {
         color: 'white',
     }
     return (
-        <div style={divStyle}>
-            <h2>{bgColor}</h2>
-        </div>
-    )
+<div style={divStyle}>
+    <h2>{bgColor}</h2>
+</div>
+)
 }
-
+//the skills shown at display at the bottom of the page
 const Container = () => {
     const skillSet = ['HTML', 'CSS', 'Sass', 'JS', 'React', 'Redux', 'Node',
         'MongoDB', 'Python', 'Flask', 'Django', 'NumPy', 'Pandas', 'Data Analysis',
         'MYSQL', 'GraphQL', 'D3.js', 'Gatsby', 'Docker', 'Heroku', 'Git']
 
-    //stopped here -> formatting the list items and making them look pretty etc.
+
     const skillStyles = {
-        background: 'purple',
+        background: 'blue',
+        padding: '5px',
+        borderRadius: '10px',
+        fontFamily: 'arial',
+        width: '5%',
+        listStyleType: 'none',
+        display: 'inline-block',
+        color: 'white',
+        margin: '10px',
+        textAlign: 'center',
     }
-    const skillsFormat = skillSet.map((skill) => <li key={skill} style={skillStyles}>{skill}</li>)
+    const skillsFormat = skillSet.map((skill) => <li key={skill} style={skillStyles}>{skill}</li>);
     return skillsFormat
 }
 
-
+//picture of person shown 
 const Image = () => {
-
     const divStyle = {
         fontFamily: 'arial',
+        textAlign: 'center',
     }
     const imageStyle = {
         borderRadius: '400px',
@@ -77,7 +84,7 @@ const Image = () => {
     }
     return (
         <div style={divStyle}>
-            <img src={asabeneh} style={imageStyle} />
+            <img src={asabeneh} alt="asabeneh computer person" style={imageStyle} />
             <h3>Asabeneh Yetayeh</h3>
             <p>Senior Developr, Finland</p>
             <h4>Skills</h4>
@@ -85,7 +92,7 @@ const Image = () => {
         </div>
     )
 }
-
+//combined both the image component and the skillSet component
 const Exercise2 = () => {
 
     return (
@@ -95,8 +102,7 @@ const Exercise2 = () => {
         </div>
     )
 }
-
-
+//brings everything together
 const App = () => (
     <div>
         <Header />
@@ -110,5 +116,4 @@ const App = () => (
 )
 
 const rootElement = document.getElementById('root')
-// we render the App component using the ReactDOM package
 ReactDOM.render(<App />, rootElement)
