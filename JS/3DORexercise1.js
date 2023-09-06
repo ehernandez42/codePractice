@@ -127,4 +127,18 @@ AMAZON
 // 22. Remove the last IT company from the array
 // 23. Remove all IT companies
 
+//try to reverse this string using recursion; Apple recursion problem
+  const str = "hello"
+
+  function recursionProblem (str) {
+    //base case
+    if (str.length === 0) return ""
+    
+    //recursion
+    return str[str.length -1 ] +
+    recursionProblem(str.slice(0, str.length-1))
+
+  }
+
+  console.log(recursionProblem(str))
   
