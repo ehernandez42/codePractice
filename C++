@@ -1,0 +1,23 @@
+/*pointers
+-
+-
+-
+
+#include <iostream>
+using namespace std;
+
+int main () {
+    int a; int b;
+    cout << "Enter an interval for A: ";
+    cin >> a;
+    cout << "Enter an interval for B: ";
+    cin >> b;
+
+    int *ptrA = &a;
+    int *ptrB = &b;
+    cout << "interval of A is: " << *ptrA << " stored in address " << ptrA << "\n";
+    cout << "interval of B is: " << *ptrB << " stored in address " << ptrB << "\n";
+
+    return 0;
+}
+*/
