@@ -141,4 +141,122 @@ AMAZON
   }
 
   console.log(recursionProblem(str))
+
+
+//hash table implementation 
+
+//storing the information before it gets hashed
+
+class HashNode {
+    constructor(key, value) {
+      this.key = key;
+      this.value = value;
+    }
+}
+
+//the size initiialization?
+class HashMap { 
+  constructor() {
+    this.capacity = 20;
+    this.size = 0;
+    this.arr = new Array(this.capacity);
   
+  //set values as NULL
+  for (let i = 0; i < this.capacity; i++) {
+    this.arr[i] = null;
+  }
+
+  //dummy node is needed for other nodes to built off of
+ this.dummy = new HashNode(-1, -1);
+  }
+
+  //implements hash function
+  hashCode(key) {
+    return key % this.capacity;
+  }
+
+  //add a node into the hash table
+
+  insertNode(key, value) {
+    //initialize node
+    const temp = new HashNode(key, value);
+
+    //initialize hashcode
+    let hashIndex = this.hashCode(key);
+
+    //finds free space
+    while (
+      this.arr[hashIndex] !== null &&
+      this.arr[hashIndex].key !== key &&
+      this.arr[hashIndex].key !== -1
+    ) {
+      hashIndex++;
+      hashIndex %= this.capacity;
+    }
+
+    if (
+      this.arr[hashIndex] === null ||
+      this.arr[hashIndex] === -1) 
+    {
+      this.size++
+    }
+    this.arr[hashIndex] = temo;
+  }
+  
+  //deleteNode function 
+
+  deleteNode(key) {
+
+    let hashIndex = this.hashCode(key);
+
+    while (this.arr[hashIndex] !== null) {
+        //if the node exists
+        if (this.arr[hashIndex].key === key) {
+          const temp = this.arr[hashIndex];
+
+          this.arr[hashIndex] = this.dummy;
+
+          this.size--;
+          hashIndex %= this.capacity;
+        }
+        hashIndex++
+        hashIndex %= this.capacity;
+    }
+    return null;
+  }
+  //function to get key from hash table
+  get(key) {
+    let hashIndex = this.hashCode(key);
+    let counter = 0;
+
+    while (this.arr[hashIndex] !== null) {
+      if (counter++ > this.capacity) {
+        return 0
+      }
+
+      if (this.arr[hashIndex].key === key) {
+        return this.arr[hashIndex].value;
+      }
+      hashIndex++;
+      hashIndex %= this.capacity;
+    }
+    return 0
+  }
+
+  sizeofMap() {
+    return this.size;
+  }
+
+  isEmpty() {
+    return this.size === 0;
+  }
+
+  display() {
+    for (let i = 0; i < this.capacity; i++) {
+        if (this.arr[i] !== null && this.arr[i].key !== -1) {
+        console.log(`key=${this.arr.key} value=${this.arr.value}`)
+        }
+      }
+    }
+  }
+
