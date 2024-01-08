@@ -1,29 +1,23 @@
-<mxfile host="app.diagrams.net" modified="2024-01-04T17:20:43.775Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="E5GdF2jPr6NbFb9JhlrI" version="22.1.15" type="github">
+<mxfile host="app.diagrams.net" modified="2024-01-08T20:25:25.207Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="1xKfQ_JWQzu_4aPvMzf9" version="22.1.16" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="795" dy="484" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="954" dy="581" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-2" value="" style="rounded=0;html=1;jettySize=auto;orthogonalLoop=1;fontSize=11;endArrow=block;endFill=0;endSize=8;strokeWidth=1;shadow=0;labelBackgroundColor=none;edgeStyle=orthogonalEdgeStyle;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-3" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="193.75" y="140" as="targetPoint" />
-          </mxGeometry>
+        <mxCell id="MClpRDDvoLhdHyorQE8o-0" value="" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="40" y="160" width="160" height="350" as="geometry" />
         </mxCell>
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-3" value="User logs in and enters site" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="133.75" y="50" width="120" height="40" as="geometry" />
+        <mxCell id="MClpRDDvoLhdHyorQE8o-6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="MClpRDDvoLhdHyorQE8o-2" target="MClpRDDvoLhdHyorQE8o-5">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="WIyWlLk6GJQsqaUBKTNV-7" value="Sidebar shows the parameters that users can change: crowd size, traffic level, off peak hours, notes" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="460" y="155" width="220" height="70" as="geometry" />
+        <mxCell id="MClpRDDvoLhdHyorQE8o-2" value="Client Login&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="60" y="180" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="FWDp5gbI1jUv0j29x1hF-3" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="FWDp5gbI1jUv0j29x1hF-4" target="WIyWlLk6GJQsqaUBKTNV-7">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="357.5" y="240" as="sourcePoint" />
-            <mxPoint x="470" y="230" as="targetPoint" />
-            <Array as="points" />
-          </mxGeometry>
+        <mxCell id="MClpRDDvoLhdHyorQE8o-4" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Client Side&lt;/font&gt;" style="text;strokeColor=none;fillColor=none;html=1;fontSize=24;fontStyle=1;verticalAlign=middle;align=center;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="60" y="110" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="FWDp5gbI1jUv0j29x1hF-4" value="Main UI is a map with a key based off of their preferences and the places that match those preferences" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="110" y="140" width="190" height="100" as="geometry" />
+        <mxCell id="MClpRDDvoLhdHyorQE8o-5" value="Main UI - Map with nav bar" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="60" y="260" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
